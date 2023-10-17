@@ -28,7 +28,7 @@
 
 ### Usamos el *ngfor para extraer los datos de ingresos que hemos creado en nuestro componente.ts aqui usamos los Pipes, también usamos el evento click para eliminar un registro que ya no necesitemos.
 
-# PIPES
+# Concepto de PIPES en Angular
   # percent: Porcentaje de PIPES
   # currency: valores monetarios y decimales 
 ## Es un Decorador que marca una clase como canalización y proporciona metadatos de configuración
