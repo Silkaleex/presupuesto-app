@@ -1,0 +1,22 @@
+<div class="ingreso">
+    <h2 class="ingreso_titulo">Ingresos</h2>
+       
+        
+        <div *ngFor="let ingreso of ingresos" class="elemento1 limpiarEstilos">
+
+            <div class="elemento_descripcion">{{ingreso.descripcion}}</div>
+            
+            <div class="right limpiarEstilos">
+                <div class="elemento_valor">{{ingreso.valor | currency:"$":"€":"1.2-2"}}</div>
+                <div class="elemento_eliminar">
+                    <button class="elemento_eliminar--btn">
+                        <i class="ion-ios-close-outline" (click)="eliminarRegistro(ingreso)"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--Usamos el *ngfor para extraer los datos de ingresos que hemos creado en nuestro componente.ts
+aqui usamos los pipes como currency que solo puede tomar dos valores monetarios en este caso
+creamos el evento click para eliminar un registro -->

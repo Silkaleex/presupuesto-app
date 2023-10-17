@@ -1,0 +1,29 @@
+<div class="cabecero">
+    <div class="presupuesto">
+        <div class="presupuesto_titulo">
+            Presupuesto Disponible:
+        </div>
+        
+        <div class="presupuesto_valor">{{presupuestoTotal | currency:"$":"€":"1.2-2"}}</div>
+        
+        <div class="presupuesto_ingreso limpiarEstilos">
+            <div class="presupuesto_ingreso--texto">Ingresos</div>
+            <div class="right">
+                <div class="presupuesto_ingreso--valor">{{ingresoTotal | currency:"$":"€":"1.2-2"}}</div>
+                <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+            </div>
+        </div>
+        
+        <div class="presupuesto_egreso limpiarEstilos">
+            <div class="presupuesto_egreso--text">Egresos</div>
+            <div class="right limpiarEstilos">
+                <div class="presupuesto_egreso--valor">-{{reintegroTotal | currency:"$":"€":"1.2-2"}}</div>
+                <div class="presupuesto_egreso--porcentaje">{{porcentajeTotal | percent}}</div>
+                <!-- percent:Porcentaje de PIPES -->
+                <!-- currency:valores monetarios y decimales -->
+                <!-- en este componente mostramos el total de ingresos y renttegros
+                     y el total de ambas -->
+            </div>
+        </div>
+    </div>
+  </div>

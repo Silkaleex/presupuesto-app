@@ -1,0 +1,45 @@
+<form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
+  <div class="agregar">
+    <div class="agregar_contenedor">
+      <select
+        (change)="tipoOperacion($event)"
+        [ngClass]="{ redfocus: tipo === 'reintegroOperacion' }"
+        class="agregar_tipo"
+      >
+        <option value="ingresoOperacion" selected>+</option>
+        <option value="reintegroOperacion">-</option>
+      </select>
+      <input
+        [ngClass]="{ redfocus: tipo === 'reintegroOperacion' }"
+        type="text"
+        class="agregar_descripcion"
+        placeholder="Agregar Descripción"
+        name="descripcionInput"
+        [(ngModel)]="descripcionInput" 
+        required
+      />
+      <input
+        [ngClass]="{ redfocus: tipo === 'reintegroOperacion' }"
+        type="number"
+        class="agregar_valor"
+        placeholder="Valor"
+        name="valorInput"
+        [(ngModel)]="valorInput" 
+        required
+      />
+      <button type="submit" class="agregar_btn">
+        <i
+          class="ion-ios-checkmark-outline"
+          [ngClass]="{ red: tipo === 'reintegroOperacion' }"
+        ></i>
+      </button>
+    </div>
+  </div>
+</form>
+<!-- (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm" 
+Valida el formulario si se escribe algo correctamente, de lo contrario no mostrara nada 
+en este componente de html mostramos el formulario de crear un ingreso o reintegro si usamos
+el valor + sera un ingreso si ponemos - sera un reintegro, si pulsamos el boton 
+se nos pondra en una columna o en otra, Luego puse un ngClass para que cuando pusiera un ingreso
+me saliera un color verde y si fuera un reintegro que el color fuera rojo
+ -->
