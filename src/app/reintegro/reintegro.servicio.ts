@@ -12,9 +12,3 @@ export class ReintegroServicio {
   }
 }
 
-/*
-En este componente creamos los datos de reintegro y creamos una funcion de eliminar con
-indexOf hace compara otros valores de reintegro y  método splice de las instancias de Array
-cambia el contenido de un array eliminando o reemplazando elementos existentes y/o
-añadiendo nuevos elementos en su lugar.
- */
