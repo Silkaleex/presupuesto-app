@@ -1,3 +1,5 @@
+![image](https://github.com/Silkaleex/presupuesto-app/assets/82760991/6c7076f3-edac-4071-b19d-a9b0236c3b20)
+
 # Presupuesto-app
 ## He creado una aplicación de presupuestos, en el que escribes el ingreso + o reintegro - que hayas tenido y automaticamente te diga cuando cuanto ingresastes sacastes, tambien obtendras el presupuesto total.
 ## Detalles del proyecto
